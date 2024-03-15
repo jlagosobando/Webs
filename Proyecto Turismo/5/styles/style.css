@@ -1,0 +1,25 @@
+body {
+    background: #243010;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+h2, h3, p {
+    margin: 0;
+}
+
+#hdr {
+    min-height: 220px;
+    padding-top: 3em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
+
+.dest {
+    background: #2A3C24;
+}
+
+
+

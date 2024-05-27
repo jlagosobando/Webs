@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo X3D</title>
+    <script type="text/javascript" src="http://www.x3dom.org/download/x3dom.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://www.x3dom.org/download/x3dom.css">
+</head>
+<body>
+    <h1>Mi Escenario X3D</h1>
+    <x3d width="800px" height="600px">
+        <scene>
+            <!-- Grupo de transformación -->
+            <transform translation="-2 0 0">
+                <!-- Esfera roja -->
+                <shape>
+                    <appearance>
+                        <material diffuseColor="1 0 0"></material>
+                    </appearance>
+                    <sphere radius="1"></sphere>
+                </shape>
+            </transform>
+            
+            <!-- Grupo de transformación -->
+            <transform translation="2 0 0">
+                <!-- Caja verde -->
+                <shape>
+                    <appearance>
+                        <material diffuseColor="0 1 0"></material>
+                    </appearance>
+                    <box size="1 1 1"></box>
+                </shape>
+            </transform>
+            
+            <!-- Texto -->
+            <transform translation="0 0 -2">
+                <shape>
+                    <appearance>
+                        <material diffuseColor="0 0 1"></material>
+                    </appearance>
+                    <text string="¡Hola, Mundo!" solid="false"></text>
+                </shape>
+            </transform>
+            
+            <!-- Luz direccional -->
+            <directionallight direction="1 -1 -1"></directionallight>
+        </scene>
+    </x3d>
+</body>
+</html>
+

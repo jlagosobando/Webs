@@ -16,7 +16,7 @@ class Character {
 
   //Ataca a otro personaje seleccionado
   attack(target) {
-    console.log(`${this.name} deals ${this.damage} DMG to ${target.name}`);
+    console.log(`${this.name} inflige ${this.damage} de daño a ${target.name}`);
     target.health -= this.damage;
   }
 
